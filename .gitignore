@@ -1,0 +1,25 @@
+# Archivos de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Compilacion
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# Paquetes y caches
+packages/
+*.cache
+_ReSharper*/
+
+# Documentos subidos por los usuarios (datos de clientes, no van al repositorio)
+documentos/*
+!documentos/.gitkeep
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store

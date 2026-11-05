@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asesoría Legal Global</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="contenedor">
+
+        <!-- Cabecera con logo y navbar -->
+        <div id="cabecera">
+            <div id="marca">
+                <asp:Image ID="ImageLogo" runat="server" ImageUrl="~/imagenes/logo.png"
+                    AlternateText="Asesoría Legal Global" CssClass="logo" />
+                <span class="nombre-empresa">Asesoría Legal Global</span>
+            </div>
+            <ul id="navbar">
+                <li><a href="Default.aspx">Inicio</a></li>
+                <li><a href="registro.aspx">Registro</a></li>
+                <li><a href="login.aspx">Iniciar sesión</a></li>
+                <li><a href="documentos.aspx">Mis documentos</a></li>
+            </ul>
+        </div>
+
+        <asp:Label ID="LabelUsuario" runat="server" CssClass="usuario-activo"></asp:Label>
+
+        <!-- Contenido propio de cada página -->
+        <div id="contenido">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer que se muestra en todas las páginas -->
+        <div id="pie">
+            <p>&copy; 2026 Asesoría Legal Global - Todos los derechos reservados</p>
+        </div>
+
+    </div>
+    </form>
+</body>
+</html>
