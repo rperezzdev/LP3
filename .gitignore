@@ -23,3 +23,6 @@ documentos/*
 # Archivos del sistema
 Thumbs.db
 .DS_Store
+
+BaseDeDatos/
+Crear db/
